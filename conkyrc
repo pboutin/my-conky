@@ -12,13 +12,13 @@ own_window_argb_visual yes
 double_buffer no
 minimum_size 300 100
 maximum_width 1280
-draw_shades yes
+draw_shades no
 draw_outline no
 draw_borders no
 draw_graph_borders no
-alignment top_left
-gap_x 650
-gap_y 370
+alignment middle_left
+gap_x 100
+gap_y 19
 no_buffers yes
 uppercase no
 cpu_avg_samples 2
@@ -26,9 +26,9 @@ net_avg_samples 1
 override_utf8_locale yes
 use_spacer right
 
-default_color fdfdfd # Text
-color2 a7a7a7        # Labels
-color3 eaeaea        # Bars
+default_color C9E0FF # Text
+color2 C9E0FF        # Labels
+color3 66AEFF        # Bars
 
 TEXT
 
