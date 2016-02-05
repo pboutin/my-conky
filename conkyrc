@@ -16,9 +16,6 @@ draw_shades yes
 draw_outline no
 draw_borders no
 draw_graph_borders no
-default_color e0e0e0
-default_shade_color black
-default_outline_color green
 alignment top_left
 gap_x 650
 gap_y 370
@@ -29,19 +26,19 @@ net_avg_samples 1
 override_utf8_locale yes
 use_spacer right
 
+default_color fdfdfd
+color2 a7a7a7
+
 TEXT
-${voffset 10}${color #fdfdfd}${font Janda Cheerful Script:pixelsize=103}${time %H:%M}${font}${voffset -84}${offset 10}${color #a7a7a7}${font Ubuntu:pixelsize=42}${time %d}${voffset -14}${color #fdfdfd}${font Ubuntu:pixelsize=22} ${time  %B} ${time %Y}${font}${voffset 24}${font Amaze:pixelsize=58}${offset -165}${time %A}${font}
-${voffset 5}${font Ubuntu:pixelsize=12}${color #a7a7a7}RAM ${offset 5}$color$mem / $memmax
+
+${voffset 10}${color}${font Janda Cheerful Script:pixelsize=103}${time %H:%M}${font}${voffset -84}${offset 10}${color2}${font Ubuntu:pixelsize=42}${time %d}${voffset -14}${color}${font Ubuntu:pixelsize=22} ${time  %B} ${time %Y}${font}${voffset 24}${font Amaze:pixelsize=58}${offset -165}${time %A}${font}
+${voffset 5}${font Ubuntu:pixelsize=12}${color2}RAM ${offset 5}$color$mem / $memmax
 ${membar 4, 500}
-${color #a7a7a7}CPU ${offset 5}$color${cpu cpu0}%
+${color2}CPU ${offset 5}$color${cpu cpu0}%
 ${cpubar 4, 500}
-${color #a7a7a7}SSD ${offset 5}$color${fs_free /} / ${fs_size /}${offset 128}${color #a7a7a7}HD ${offset 5}$color${fs_free /home} / ${fs_size /home}
+${color2}SSD ${offset 5}$color${fs_free /} / ${fs_size /}${offset 128}${color2}HD ${offset 5}$color${fs_free /home} / ${fs_size /home}
 ${fs_bar 4, 245 /}${offset 10}${fs_bar 4, 245 /home}
-${color #a7a7a7}Bat.1 ${offset 5}$color${battery_percent BAT0}%${offset 194}${color #a7a7a7}Bat.2 ${offset 5}$color${battery_percent BAT1}%  
+${color2}Bat.1 ${offset 5}$color${battery_percent BAT0}%${offset 194}${color2}Bat.2 ${offset 5}$color${battery_percent BAT1}%  
 ${battery_bar 4, 245 BAT0}${offset 10}${battery_bar 4, 245 BAT1}
-
-
-
-
 
 
